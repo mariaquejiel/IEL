@@ -1,0 +1,41 @@
+situacoes = {
+    "Mais fáceis de modelar": [
+        {
+            "previsao": "Altura média dos estudantes daqui a um ano",
+            "caracteristicas": "O crescimento acontece gradualmente.",
+            "estabilidade": "Estável",
+            "informacao": "Altura atual, idade e histórico de crescimento."
+        },
+        {
+            "previsao": "Tempo médio de deslocamento até a escola",
+            "caracteristicas": "Pode ser estimado com dados de deslocamentos anteriores.",
+            "estabilidade": "Relativamente estável",
+            "informacao": "Tempo de deslocamento em diferentes dias."
+        }
+    ],
+
+    "Mais difíceis de modelar": [
+        {
+            "previsao": "Vídeo mais assistido da internet na próxima semana",
+            "caracteristicas": "Depende de tendências e da popularidade dos vídeos.",
+            "estabilidade": "Volátil",
+            "informacao": "Visualizações, curtidas e compartilhamentos."
+        },
+        {
+            "previsao": "Preço de uma moeda estrangeira amanhã",
+            "caracteristicas": "Depende da economia e de acontecimentos inesperados.",
+            "estabilidade": "Muito volátil",
+            "informacao": "Histórico da cotação e taxas de juros."
+        }
+    ]
+}
+
+for categoria, itens in situacoes.items():
+    print("\n", categoria)
+    print("-" * 40)
+
+    for item in itens:
+        print("\nPrevisão:", item["previsao"])
+        print("Características:", item["caracteristicas"])
+        print("Estabilidade:", item["estabilidade"])
+        print("Informação necessária:", item["informacao"])
